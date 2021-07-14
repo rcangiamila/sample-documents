@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dossier Stefano 1</title>
+    <style media="screen" type="text/css">
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr, th {
+        border: 0px
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">{{name}}</h2>
+  <div>
+    <table>
+      <tr>
+        <th style="text-align: left; width:33%">Importo</th>
+        <th style="text-align: center; width:33%">Finalità</th>
+        <th style="text-align: right; width:33%">Data di creazione</th>
+      </tr>
+      <tr>
+        <td style="border-right: 0px; text-align: left; width:33%">{{importo}}</td>
+        <td style="border-right: 0px; text-align: center; border-left:0px; width:33%">{{finalita}}</td>
+        <td style="border-left: 0px; text-align: right; width:33%">{{created}}</td>
+      </tr>
+    </table>
+  </div>
+  <div style="width: 100%">
+    <div>
+      <h3 style="text-align: left;">Richiedente</h3>
+    </div>
+    <div style="border-radius: 20px;border: 1px solid;padding: 20px;min-height: 110px;">
+      <div style="float: left;width: 30%">Nome e Cognome</div><div style="float: left;width: 70%">{{fullName}}</div>
+      <div style="float: left;width: 30%">Tipo di documento</div><div style="float: left;width: 70%">{{documentType}}</div>
+      <div style="float: left;width: 30%">Numero di documento</div><div style="float: left;width: 70%">{{documentNumber}}</div>
+    </div>
+  </div>
+  <div style="width: 100%">
+    <div>
+      <h3 style="text-align: left;">Anagrafica Azienda</h3>
+    </div>
+    <div style="float:left;border-radius: 20px;width:45%; border: 1px solid;padding: 20px;min-height: 110px;">
+      <div style="width: 30%; float: left">Denominazione</div><div style="width: 70%; float: left">{{denominazione}}</div>
+      <div style="width: 30%; float: left">Indirizzo Sede</div><div style="width: 70%; float: left">{{sede.indirizzo}}</div>
+      <div style="width: 30%; float: left">Comune Sede</div><div style="width: 70%; float: left">{{sede.comune}}</div>
+      <div style="width: 30%; float: left">Partita IVA</div><div style="width: 70%; float: left">{{partitaIva}}</div>
+      <div style="width: 30%; float: left">Codice fiscale</div><div style="width: 70%; float: left">{{codiceFiscale}}</div>
+    </div>
+    <div style="float:right;border-radius: 20px;width:45%; border: 1px solid;padding: 20px;min-height: 110px;">
+      <div style="width: 30%; float: left">CCIAA-REA</div><div style="width: 70%; float: left">{{cciaaRea}}</div>
+      <div style="width: 30%; float: left">Forma giuridica</div><div style="width: 70%; float: left">{{naturaGiuridica.descrizione}}</div>
+      <div style="width: 30%; float: left">Codice Ateco</div><div style="width: 70%; float: left">{{ateco.codice}}</div>
+      <div style="width: 30%; float: left">Descrizione Ateco</div><div style="width: 70%; float: left">{{ateco.descrizione}}</div>
+      <div style="width: 30%; float: left">Stato attività</div><div style="width: 70%; float: left">{{statoAttivita}}</div>
+    </div>
+  </div>
+</body>
+</html>
