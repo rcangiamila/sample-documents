@@ -21,6 +21,11 @@
         border: 0px
       }
 
+      .full {
+        width: 100%;
+        height: 100%
+      }
+
     </style>
   </head>
   <body>
@@ -39,34 +44,54 @@
       </tr>
     </table>
   </div>
-  <div style="width: 100%">
-    <div>
-      <h3 style="text-align: left;">Richiedente</h3>
-    </div>
-    <div style="border-radius: 20px;border: 1px solid;padding: 20px;min-height: 110px;">
-      <div style="float: left;width: 30%">Nome e Cognome</div><div style="float: left;width: 70%">{{fullName}}</div>
-      <div style="float: left;width: 30%">Tipo di documento</div><div style="float: left;width: 70%">{{documentType}}</div>
-      <div style="float: left;width: 30%">Numero di documento</div><div style="float: left;width: 70%">{{documentNumber}}</div>
-    </div>
-  </div>
-  <div style="width: 100%">
-    <div>
-      <h3 style="text-align: left;">Anagrafica Azienda</h3>
-    </div>
-    <div style="float:left;border-radius: 20px;width:45%; border: 1px solid;padding: 20px;min-height: 110px;">
-      <div style="width: 30%; float: left">Denominazione</div><div style="width: 70%; float: left">{{denominazione}}</div>
-      <div style="width: 30%; float: left">Indirizzo Sede</div><div style="width: 70%; float: left">{{sede.indirizzo}}</div>
-      <div style="width: 30%; float: left">Comune Sede</div><div style="width: 70%; float: left">{{sede.comune}}</div>
-      <div style="width: 30%; float: left">Partita IVA</div><div style="width: 70%; float: left">{{partitaIva}}</div>
-      <div style="width: 30%; float: left">Codice fiscale</div><div style="width: 70%; float: left">{{codiceFiscale}}</div>
-    </div>
-    <div style="float:right;border-radius: 20px;width:45%; border: 1px solid;padding: 20px;min-height: 110px;">
-      <div style="width: 30%; float: left">CCIAA-REA</div><div style="width: 70%; float: left">{{cciaaRea}}</div>
-      <div style="width: 30%; float: left">Forma giuridica</div><div style="width: 70%; float: left">{{naturaGiuridica.descrizione}}</div>
-      <div style="width: 30%; float: left">Codice Ateco</div><div style="width: 70%; float: left">{{ateco.codice}}</div>
-      <div style="width: 30%; float: left">Descrizione Ateco</div><div style="width: 70%; float: left">{{ateco.descrizione}}</div>
-      <div style="width: 30%; float: left">Stato attività</div><div style="width: 70%; float: left">{{statoAttivita}}</div>
-    </div>
+  <div>
+    <table>
+      <tr>
+        <td colspan="3" style="border: 0px"><h3>Richiedente</h3></td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Nome e Cognome</td><td style="border: 0px; text-align: left; width:70%">{{fullName}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Tipo di documento</td><td style="border: 0px; text-align: left; width:70%">{{documentType}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Numero di documento</td><td style="border: 0px; text-align: left; width:70%">{{documentNumber}}</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="border: 0px;"><h3>Anagrafica Azienda</h3></td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Denominazione</td><td style="border: 0px; text-align: left; width:70%">{{denominazione}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Indirizzo Sede</td><td style="border: 0px; text-align: left; width:70%">{{sede.indirizzo}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Comune Sede</td><td style="border: 0px; text-align: left; width:70%">{{sede.comune}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Partita IVA</td><td style="border: 0px; text-align: left; width:70%">{{partitaIva}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Codice fiscale</td><td style="border: 0px; text-align: left; width:70%">{{codiceFiscale}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">CCIAA-REA</td><td style="border: 0px; text-align: left; width:70%">{{cciaaRea}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Forma giuridica</td><td style="border: 0px; text-align: left; width:70%">{{naturaGiuridica.descrizione}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Codice Ateco</td><td style="border: 0px; text-align: left; width:70%">{{ateco.codice}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Descrizione Ateco</td><td style="border: 0px; text-align: left; width:70%">{{ateco.descrizione}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Stato attività</td><td style="border: 0px; text-align: left; width:70%">{{statoAttivita}}</td>
+      </tr>
+    </table>
   </div>
   </body>
 </html>
