@@ -138,8 +138,22 @@
         <td style="border: 0px; text-align: left; width:30%">Ultimo bilancio</td><td style="border: 0px; text-align: left; width:70%">{{data.datiAzienda.dataChiusuraBilancio.giorno}}/{{data.datiAzienda.dataChiusuraBilancio.mese}}/{{data.datiAzienda.dataChiusuraBilancio.anno}}</td>
       </tr>
       <tr>
-        </div>
         <td colspan="3" style="border: 0px"><h3>Legale rappresentante</h3></td>
+      </tr>
+      <tr>
+        <td colspan="3" style="border: 0px"><h3>{{data.legaleRappresentante.nome}} {{data.legaleRappresentante.nome}}</h3></td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Codice fiscale</td><td style="border: 0px; text-align: left; width:70%">{{data.legaleRappresentante.codiceFiscale}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Data di nascita</td><td style="border: 0px; text-align: left; width:70%">{{data.legaleRappresentante.dataNascita.giorno}}/{{data.legaleRappresentante.dataNascita.mese}}/{{data.legaleRappresentante.dataNascita.anno}}</td>
+      </tr>
+      <tr>
+        <td style="border: 0px; text-align: left; width:30%">Residenza</td><td style="border: 0px; text-align: left; width:70%">{{data.legaleRappresentante.residenza.indirizzo}} {{data.legaleRappresentante.residenza.comune}} ({{data.legaleRappresentante.residenza.provincia}})</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="border: 0px; text-align: right">amministratore delegato dal  {{data.legaleRappresentante.dataAttoNomina.giorno}}/{{data.legaleRappresentante.dataAttoNomina.mese}}/{{data.legaleRappresentante.dataAttoNomina.anno}}</td>
       </tr>
     </table>
   </div>
